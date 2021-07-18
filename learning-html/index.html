@@ -128,6 +128,30 @@
         <span style="color:red">Important</span>
          Message</h2>
 
-    <!---->
+    <!--Forms-->
+    <h1 align="center">Forms and input</h1>
+    <form action="http://www.sololearn.com"></form>
+    <!--Two ways to submit a form-->
+    <!--method GET makes visible form data in the page adress-->
+    <!--The contrary with POST-->
+    <form action="http://www.sololearn.com" method="GET"></form>
+    <form action="http://www.sololearn.com" method="POST"></form>
+    <!--Example and tag input-->
+    <form>
+        <input type="text" name="username" /><br />
+        <input type="password" name="password" />
+    </form>
+    <input type="radio" name="gender" value="male" />Male <br />
+    <input type="radio" name="gender" value="female" />Female <br />
+    <input type="checkbox" name="gender" value="male" />Male <br />
+    <input type="checkbox" name="gender" value="female" />Female <br />
+    <!--multiple lines of input-->
+    <textarea name="message"></textarea>
+    <!--To submit a form we need the "submit button"-->
+    <form action="http://www.sololearn.com" method="GET">
+        <input type="text" name="username" /><br />
+        <input type="password" name="password" /><br />
+        <input type="submit" name="submit" value="submit">
+    </form>
 </body>
 </html>
