@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h1 style="text-align: left;">Máquina Virtual con Ubuntu Desktop: Creación y configuración en VirtualBox</h1>
+    <p>
+        Hola 😀
+        <br />
+        <br />
+    </p>
+    <p style="text-align: left;">
+        En este tutorial veremos como instalar el sistema operativo Ubuntu Desktop en una máquina virtual con Virtualbox.
+        <br />
+        <br />
+        Este tutorial está destinado a los que practican Programación Competitiva, pero cualquiera a quien pueda ayudar, es bienvenido. Seré lo más claro posible.
+        Aquí tienes el índice por si te interesa una parte específica del tutorial:
+
+        <!--Insertar indice-->
+    </p>
+
+    <h2 id="virtualbox" style="text-align: left;">Descarga de Oracle VirtualBox</h2>
+    <p style="text-align: left;">
+        Como primer paso para tener nuestra superestación de entrenamiento para
+         programación competitiva, necesitamos instalar "Oracle VirtualBox"
+         recuerden instalar siempre de Sitios Web oficiales, para evitar los virus.
+         Nos vamos al <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">Sitio web de descarga</a> 
+         y damos click en "Windows Hosts"
+    </p>
+
+    <div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-sj-n5bZZCdc/YSpHc6-lo1I/AAAAAAAAAA4/X9ONYwwld848dboZnojb4UulhdX4vjPkACPcBGAYYCw/s1920/imagen1.PNG" style="display: block; padding: 1em 0px; text-align: center;">
+        
+        <img alt="" border="0" data-original-height="865" data-original-width="1920" height="342" src="https://1.bp.blogspot.com/-sj-n5bZZCdc/YSpHc6-lo1I/AAAAAAAAAA4/X9ONYwwld848dboZnojb4UulhdX4vjPkACPcBGAYYCw/w652-h342/imagen1.PNG" width="652" /></a>
+    </div>
+
+    <p style="text-align: left;">
+        Comenzará una descarga de 103 MB, dependiendo de tu conexión, será más o menos rápida
+        Guárdala donde gustes
+    </p>
+
+    <h4 style="text-align: left;">Datos técnicos:</h4>
+    <div style="text-align: left;">
+        Oracle VirtualBox es un Software gratuito para la gestión de máquinas virtuales 
+        o en lenguaje coloquial "Un sistema operativo corriendo dentro de otro", con él puedes
+        tener varios sistemas operativos y ajustar los parámetros de estos, como la memoria RAM 
+        que les quieres destinar, la memoria interna que les asignarás (Es memoria virtual, así 
+        que aunque se les asignase 100 GB, ocuparían en disco físico solo lo necesario).
+        También puedes definir el tipo de interacción que tendrá con tu máquina física.
+        Recuerda que el costo de poner un sistema operativo en VirtualBox depende del Sistema operativo 
+        en sí, y no de VirtualBox, ya que para poner un Sistema Operativo en VirtualBox únicamente necesitamos 
+        el archivo .iso del mismo, el cual puede ser de distribución gratuita (Como Ubuntu) 
+        o de pago como Windows o Mac.
+    </div>
+    
+    <h2 style="text-align: left;">Descarga de Ubuntu Desktop</h2>
+    <p style="text-align: left;">
+        Para descargar el iso de Ubuntu Desktop, solo hace falta ir a la <a href="https://ubuntu.com/#download">web oficial de Ubuntu</a>
+        
+    </p>
+    <div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-Jy569K0cWRE/YSpHc3tv4PI/AAAAAAAAABU/OqvXIbNcbKMrnVnQSWQR9EVOoe6e1sA2wCPcBGAYYCw/s1896/imagen2.PNG" style="display: block; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="867" data-original-width="1896" height="295" src="https://1.bp.blogspot.com/-Jy569K0cWRE/YSpHc3tv4PI/AAAAAAAAABU/OqvXIbNcbKMrnVnQSWQR9EVOoe6e1sA2wCPcBGAYYCw/w648-h295/imagen2.PNG" width="648" /></a></div>
+
+    <p style="text-align: left;">
+        Al momento de redacción de este artículo, la versión estable 
+        es la 20.04, así que en ella haremos click (En general, la opción verde).
+        Guárdala donde gustes.
+    </p>
+
+    <h4 style="text-align: left;">Datos técnicos:</h4>
+    <div style="text-align: left;">
+        Ubuntu es un sistema operativo de distribución libre que utiliza el kernel 
+        de Linux, Se han hecho varias versiones del mismo, para distintos usos, nosotros
+        usaremos Ubuntu Desktop, que es la distribución para usuarios promedio, es decir, 
+        Cuenta con una interfaz gráfica parecida a la de Windows y tiene a nuestra disposición 
+        todas las herramientas Unix necesarias para uso de oficina, o de programación ligera (Con 
+        programación ligera, se entiende, tareas que no requieran alto poder de procesamiento gráfico 
+        como la programación competitiva, el diseño de Sitios Web o desarrollo de aplicaciones móviles)
+    </div>
+
+    <h2 style="text-align: left;">Instalación de Oracle VirtualBox</h2>
+    <p style="text-align: left;">
+        Hacemos doble click sobre el instalador de VirtualBox para instalarlo, y en el 
+        primer cuadro hacemos click en siguiente o "Next".
+    </p>
+
+    <div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-Ny0f3sJN50Y/YSpHd7KZb6I/AAAAAAAAABU/3564iioXpe8FEUQWcdyf2UFMQ-ua9J23ACPcBGAYYCw/s742/imagen3.PNG" style="display: block; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="582" data-original-width="742" height="314" src="https://1.bp.blogspot.com/-Ny0f3sJN50Y/YSpHd7KZb6I/AAAAAAAAABU/3564iioXpe8FEUQWcdyf2UFMQ-ua9J23ACPcBGAYYCw/w400-h314/imagen3.PNG" width="400" /></a></div>
+
+    <p style="text-align: left;">
+        Nos pregunta de que forma queremos instalar los componentes de VirtualBox, hacemos 
+        click en Next para dejarlo en sus valores por defecto.
+    </p>
+
+    <div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-nqt9TPF3fQc/YSpHeJifemI/AAAAAAAAABQ/iOq9H7ZOfOweEHI1jaNvIX1kgGAOIcSwwCPcBGAYYCw/s743/imagen4.PNG" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="400" data-original-height="580" data-original-width="743" src="https://1.bp.blogspot.com/-nqt9TPF3fQc/YSpHeJifemI/AAAAAAAAABQ/iOq9H7ZOfOweEHI1jaNvIX1kgGAOIcSwwCPcBGAYYCw/s400/imagen4.PNG"/></a></div>
+
+    <p style="text-align: left;">
+        En las opciones extra, marquen las que ustedes consideren, si quieren 
+        ayuda con la decisión, vean los datos técnicos.
+    </p>
+
+<div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-GLaUm98Tn_8/YSpHeMFln8I/AAAAAAAAABY/Hw4whjX2GT0A3G7fFxDuEDPXeU12FJePACPcBGAYYCw/s741/imagen5.PNG" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="400" data-original-height="580" data-original-width="741" src="https://1.bp.blogspot.com/-GLaUm98Tn_8/YSpHeMFln8I/AAAAAAAAABY/Hw4whjX2GT0A3G7fFxDuEDPXeU12FJePACPcBGAYYCw/s400/imagen5.PNG"/></a></div>
+    
+    <h4 style="text-align: left;">Datos técnicos</h4>
+    <div style="text-align: left;">
+        <ul>
+            <li>
+                <p style="font-style: italic;">Create Start Menu entries:</p> 
+                    <p>Significa que vas a poder encontrar a VirtualBox en el menu de 
+                    íconos de inicio
+                </p>
+            </li>
+            <li>
+                <p style="font-style: italic;">Create a shortcut in the desktop: </p>
+                    <p> Significa que vas a poder encontrar al ícono de VirtualBox en el escritorio
+                </p>
+            </li>
+            <li>
+                <p style="font-style: italic;">Create a shortcut in the Quick Launch Bar: </p>
+                    <p> Significa que vas a poder encontrar al ícono de VirtualBox en la barra de tareas
+                </p>
+            </li>
+            <li>
+                <p style="font-style: italic;">Register file associations: </p>
+                    <p> Significa que los archivos que se pueden ejecutar con la ayuda de 
+                    VirtualBox, serán reconocidos.
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <p style="text-align: left;">
+        Seleccionamos "Si" o "Yes".
+    </p>
+
+<div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-spXaHZNux8Y/YSpHce0oOMI/AAAAAAAAABM/obYZcuyqYhElyFJwcTMRwqB6ZWgEt1_IACPcBGAYYCw/s741/imagen%2B6.PNG" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="400" data-original-height="583" data-original-width="741" src="https://1.bp.blogspot.com/-spXaHZNux8Y/YSpHce0oOMI/AAAAAAAAABM/obYZcuyqYhElyFJwcTMRwqB6ZWgEt1_IACPcBGAYYCw/s400/imagen%2B6.PNG"/></a></div>
+
+    <p style="text-align: left;">
+        Seleccionamos "Install" o "instalar"
+    </p>
+
+	<div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-Ju4SgJsii4w/YSpHeZolHMI/AAAAAAAAABc/f_whM_qa5z4zA4aAHnT2gvlwVwqngAH9ACPcBGAYYCw/s741/imagen7.PNG" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="400" data-original-height="582" data-original-width="741" src="https://1.bp.blogspot.com/-Ju4SgJsii4w/YSpHeZolHMI/AAAAAAAAABc/f_whM_qa5z4zA4aAHnT2gvlwVwqngAH9ACPcBGAYYCw/s400/imagen7.PNG"/></a></div>
+
+    <p style="text-align: left;">
+        Pedirá permisos de administrador, se los aprbamos; luego se tardará muy poco 
+        y ya tendrán instalado el Oracle VirtualBox. Damos click en "finish" o "terminar"
+    </p>
+
+    <h2 style="text-align: left;">Creación de nueva máquina virtual con Ubuntu</h2>
+    <p style="text-align: left;">
+        Abrimos VirtualBox, y damos click en nuevo
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
